@@ -1,0 +1,56 @@
+{
+  "name": "sails-hook-paystack",
+  "version": "0.0.1",
+  "description": "Exposes Sails helpers to communicate with the Paystack API to initialize transaction, create plans, etc.",
+  "main": "lib/sails-hook-paystack.js",
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.4",
+    "machinepack-paystack": "^0.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "mocha": "^8.2.1",
+    "sails": "^1.4.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailscastshq/sails-hook-paystack.git"
+  },
+  "keywords": [
+    "sails",
+    "paystack",
+    "payment-processing",
+    "credit-card",
+    "paystack-api"
+  ],
+  "author": "Kelvin Omereshone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sailscastshq/sails-hook-paystack/issues"
+  },
+  "homepage": "https://github.com/sailscastshq/sails-hook-paystack#readme",
+  "sails": {
+    "isHook": true,
+    "hookName": "paystack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
