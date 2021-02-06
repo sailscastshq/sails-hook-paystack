@@ -14,7 +14,6 @@ After installation, you can access the methods to interact with Paystack API as 
 
 ```js
 // api/controllers/admin/create-plan
-
 // ...
 const createdPlan = await global.sails.helpers.paystack.createPlan.with({
       name: 'Plan from Sails Hook',
