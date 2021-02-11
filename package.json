@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-paystack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Exposes Sails helpers to communicate with the Paystack API to initialize transaction, create plans, etc.",
   "main": "lib/sails-hook-paystack.js",
   "dependencies": {
