@@ -5,7 +5,7 @@
   "main": "lib/sails-hook-paystack.js",
   "dependencies": {
     "@sailshq/lodash": "^3.10.4",
-    "machinepack-paystack": "^0.1.0"
+    "machinepack-paystack": "^0.2.1"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
